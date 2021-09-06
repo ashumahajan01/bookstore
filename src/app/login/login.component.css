@@ -1,0 +1,10 @@
+.container-fluid {
+    background-color: #fff;
+    margin-top: 4%;
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+  }

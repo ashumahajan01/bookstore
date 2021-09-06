@@ -1,0 +1,34 @@
+<div class="container-fluid col-md-4 offset-md-4">
+    <mat-card>
+        <mat-card-content> 
+            <div class="row">
+                <div *ngIf="isLoginError" class="alert alert-danger">
+                {{loginError}}
+            </div>
+            <form [formGroup]="loginForm" (ngSubmit)="userLogin()" class="row g-3">
+                <div class="col-12">
+                    <label>Username</label>
+                    <input type="text" formControlName="username" 
+                    autocomplete="off" placeholder="Username" 
+                    class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
+                </div>
+                <span  *ngIf="submitted && f.username.errors"
+                    class="form-text">Username is Required</span>
+                <div class="col-12">
+                    <label>Password</label>
+                    <input type="password" formControlName="password" 
+                    autocomplete="off" placeholder="Password" 
+                    class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
+                </div>
+                <span  *ngIf="submitted && f.password.errors"
+                    class="form-text">Password is Required</span>
+                <div class="col-12">
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
+                </div>
+            </form>                    
+            </div>
+        </mat-card-content>
+    </mat-card> 
+</div>
