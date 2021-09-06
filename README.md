@@ -4,7 +4,9 @@ Font end application for Bookstore.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
 
 Angular CLI: 12.2.2
+
 Node: 14.17.6
+
 Package Manager: npm 6.14.15
 
 Make sure to install all the required packages/software with specified vesion as mention above before running Bookstore application.
