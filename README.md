@@ -25,6 +25,7 @@ Use Below mentions credentails to logged into application.
     * View list of books  
  
 ## Development server
+Run 'npm install' to install all the required dependencies for the project.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
